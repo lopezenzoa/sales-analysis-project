@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS sales (
+  row_id INT PRIMARY KEY AUTO_INCREMENT,
+  order_id VARCHAR(60) NOT NULL,
+  order_date DATE DEFAULT NULL,
+  ship_date DATE DEFAULT NULL,
+  ship_mode VARCHAR(60) NOT NULL,
+  customer_id VARCHAR(60) NOT NULL,
+  customer_name VARCHAR(60) NOT NULL,
+  segment VARCHAR(60) NOT NULL,
+  country VARCHAR(60) NOT NULL,
+  city VARCHAR(60) NOT NULL,
+  state VARCHAR(60) NOT NULL,
+  postal_code INT NOT NULL,
+  region VARCHAR(60) NOT NULL,
+  product_id VARCHAR(60) NOT NULL,
+  category VARCHAR(60) NOT NULL,
+  sub_category VARCHAR(60) DEFAULT NULL,
+  product_name VARCHAR(255) NOT NULL,
+  sales DECIMAL(10,2) NOT NULL
+);
